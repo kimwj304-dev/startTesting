@@ -14,7 +14,6 @@ import android.os.Bundle;
 import android.provider.CallLog;
 import android.provider.Telephony;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 
 public class MainActivity extends AppCompatActivity {
     SmsReceiver smsReceiver = new SmsReceiver();
@@ -29,15 +28,14 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-
     private void startCursorTest(){
-        Cursor c = getCursor();
-        c.moveToFirst();
-        for(int i = 0; i < 10; i++){
-            String number = c.getString(1);
-            Log.v("KIMWJ", "number : " + number);
-            c.moveToNext();
-        }
+//        Cursor c = getCursor();
+//        c.moveToFirst();
+//        for(int i = 0; i < 10; i++){
+//            String number = c.getString(1);
+//            Log.v("KIMWJ", "number : " + number);
+//            c.moveToNext();
+//        }
     }
 
     private Cursor getCursor(){
